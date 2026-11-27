@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S02: owner creates staff and resets password, cashier denied
+ok 23 - S02: owner creates staff and resets password, cashier denied
+  ---
+  duration_ms: 195.86901
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.

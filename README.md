@@ -73,7 +73,7 @@ This table describes the contents of the staged publication package, not complet
 | Slice | Assigned publisher | Branch | Source handoff | Publication scope |
 |---|---|---|---|---|
 | S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
-| S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
+| S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S03 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S05 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
