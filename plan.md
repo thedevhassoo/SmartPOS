@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v07
+**Plan version:** v08
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 4/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 5/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -31,7 +31,7 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S02 - Owner manages staff accounts and resets passwords | Muhammad Sana Ullah | `feature-sana` | P1 | FR-01 | S01 | Source included |
 | S03 - Register, update and find products | Hassan Adil | `feature-hassan` | P0 | FR-02, FR-13 | S01 | Source included |
 | S04 - Receive stock batches and inspect expiry and costs | Muhammad Sana Ullah | `feature-sana` | P1 | FR-05, FR-06 | S03 | Source included |
-| S05 - Create, rename and assign storage locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S03 | Source ready for later publication |
+| S05 - Create, rename and assign storage locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S03 | Source included |
 | S06 - Filter products and safely delete locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S05 | Source ready for later publication |
 | S07 - Upload CSV and inspect a validation preview | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S03, S05 | Source ready for later publication |
 | S08 - Resolve CSV duplicates and Replace/Skip decisions | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S07 | Source ready for later publication |
@@ -132,7 +132,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Hassan Adil | **Branch:** `feature-hassan` | **Priority:** P1 | **Prerequisites:** S03  
 **FRs:** FR-15 | **NFRs:** NFR-03; NFR-04 (final)  
-**Task folder:** `slices/S05_HassanAdil/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S05_HassanAdil/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager creates or renames normalized locations and assigns/replaces one current location; authorized lookup including Cashier shows location or Unassigned. Catalog alone changes product reference. Canonical normalized location, one assignment or Unassigned; only Catalog writes product references through its own public service. Audit only as required by PRD.
 
@@ -373,6 +373,7 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v05: S02 publication payload.
 - v06: S03 publication payload.
 - v07: S04 publication payload.
+- v08: S05 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -393,7 +394,7 @@ This table describes the contents of the staged publication package, not complet
 | S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S03 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
-| S05 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
+| S05 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S06 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
