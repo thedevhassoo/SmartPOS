@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v06
+**Plan version:** v07
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 3/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 4/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -30,7 +30,7 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S01 - Sign in and enforce role access | Muhammad Sana Ullah | `feature-sana` | P0 | FR-01, FR-08, FR-10 | Verified initialization | Source included |
 | S02 - Owner manages staff accounts and resets passwords | Muhammad Sana Ullah | `feature-sana` | P1 | FR-01 | S01 | Source included |
 | S03 - Register, update and find products | Hassan Adil | `feature-hassan` | P0 | FR-02, FR-13 | S01 | Source included |
-| S04 - Receive stock batches and inspect expiry and costs | Muhammad Sana Ullah | `feature-sana` | P1 | FR-05, FR-06 | S03 | Source ready for later publication |
+| S04 - Receive stock batches and inspect expiry and costs | Muhammad Sana Ullah | `feature-sana` | P1 | FR-05, FR-06 | S03 | Source included |
 | S05 - Create, rename and assign storage locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S03 | Source ready for later publication |
 | S06 - Filter products and safely delete locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S05 | Source ready for later publication |
 | S07 - Upload CSV and inspect a validation preview | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S03, S05 | Source ready for later publication |
@@ -118,7 +118,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Muhammad Sana Ullah | **Branch:** `feature-sana` | **Priority:** P1 | **Prerequisites:** S03  
 **FRs:** FR-05, FR-06 | **NFRs:** NFR-03; NFR-04 (final); NFR-02  
-**Task folder:** `slices/S04_MuhammadSanaUllah/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S04_MuhammadSanaUllah/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager enters incoming Product Batch quantity, expiry and purchase cost; Inventory owns stock changes; show batch-specific quantities/dates/cost and Recorded Stock. Cashier cannot alter expiry. Use the approved Recorded/Available Stock distinction. Positive integer batch quantity, exact PKR cost, valid expiry or explicit non-expiring status; expired items are not sellable. Ensure deterministic FEFO allocation is available to S13; capture actual batch cost.
 
@@ -372,6 +372,7 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v04: S01 publication payload.
 - v05: S02 publication payload.
 - v06: S03 publication payload.
+- v07: S04 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -391,7 +392,7 @@ This table describes the contents of the staged publication package, not complet
 | S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S03 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
-| S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
+| S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S05 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S06 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
