@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S09: repeat scan items aggregate, quote does not persist, explicit Save does not deduct
+ok 12 - S09: repeat scan items aggregate, quote does not persist, explicit Save does not deduct
+  ---
+  duration_ms: 3.705453
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.

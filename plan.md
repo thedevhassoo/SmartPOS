@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v11
+**Plan version:** v12
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 8/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 9/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -35,7 +35,7 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S06 - Filter products and safely delete locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S05 | Source included |
 | S07 - Upload CSV and inspect a validation preview | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S03, S05 | Source included |
 | S08 - Resolve CSV duplicates and Replace/Skip decisions | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S07 | Source included |
-| S09 - Prepare, recalculate and explicitly save Draft Bills | Hassan Adil | `feature-hassan` | P0 | FR-02, FR-03, FR-04, FR-15 | S03, S05 | Source ready for later publication |
+| S09 - Prepare, recalculate and explicitly save Draft Bills | Hassan Adil | `feature-hassan` | P0 | FR-02, FR-03, FR-04, FR-15 | S03, S05 | Source included |
 | S10 - Reconcile stock discrepancies and audit adjustments | Muhammad Sana Ullah | `feature-sana` | P1 | FR-05, FR-13 | S04 | Source ready for later publication |
 | S11 - Create, edit and cancel scheduled store-wide offers | Muhammad Faseeh | `feature-faseeh` | P1 | FR-13, FR-16 | S01 | Source ready for later publication |
 | S12 - Apply current offers to Draft Bill totals | Muhammad Faseeh | `feature-faseeh` | P0 | FR-03, FR-16 | S09, S11 | Source ready for later publication |
@@ -188,7 +188,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Hassan Adil | **Branch:** `feature-hassan` | **Priority:** P0 | **Prerequisites:** S03, S05  
 **FRs:** FR-02, FR-03, FR-04, FR-15 | **NFRs:** NFR-03; NFR-04 (final); NFR-01  
-**Task folder:** `slices/S09_HassanAdil/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S09_HassanAdil/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Checkout users add/remove products and positive quantities, view price and subtotal, explicitly Save; unsaved draft is not persisted; no manual Cashier discount or stock reservation. S12 adds current offers and S13 Push. Dedicated HID scan field + Enter, repeated intentional scans increment quantity, prevent duplicate handling of one terminator, respect dialog focus, fallback to manual and name search. Explicit Save only; no stock reservation or deduction. S12 integrates offers, S13 finalizes sales. Never report a simulated scan as hardware verification.
 
@@ -377,6 +377,7 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v09: S06 publication payload.
 - v10: S07 publication payload.
 - v11: S08 publication payload.
+- v12: S09 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -401,7 +402,7 @@ This table describes the contents of the staged publication package, not complet
 | S06 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
 | S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
-| S09 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
+| S09 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
