@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S13: sale atomicity, idempotency, mismatch and concurrent last-unit attempts in memory
+ok 20 - S13: sale atomicity, idempotency, mismatch and concurrent last-unit attempts in memory
+  ---
+  duration_ms: 4.615348
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.

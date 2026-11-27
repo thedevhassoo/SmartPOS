@@ -33,8 +33,8 @@ This table describes the contents of the staged publication package, not complet
 | S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
-| S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
-| S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
+| S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
+| S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
 | S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
 | S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
 | S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |

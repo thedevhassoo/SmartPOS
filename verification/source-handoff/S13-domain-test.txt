@@ -1,0 +1,8 @@
+Excerpt from shared ChatGPT rebuild domain test run, 2026-11-26T23:56:53+05:00. Not a test run by the member or a test of the staged branch. Full original log supplied at final verification.
+
+# Subtest: S13: sale atomicity, idempotency, mismatch and concurrent last-unit attempts in memory
+ok 20 - S13: sale atomicity, idempotency, mismatch and concurrent last-unit attempts in memory
+  ---
+  duration_ms: 14.508698
+  type: 'test'
+  ...
