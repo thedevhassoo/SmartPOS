@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S17: refund approval, uncertain external result, repeat completion and permissions
+ok 17 - S17: refund approval, uncertain external result, repeat completion and permissions
+  ---
+  duration_ms: 5.373693
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.
