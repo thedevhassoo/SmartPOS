@@ -1,0 +1,8 @@
+Excerpt from shared ChatGPT rebuild domain test run, 2026-11-26T23:56:53+05:00. Not a test run by the member or a test of the staged branch. Full original log supplied at final verification.
+
+# Subtest: S04: incoming batch, recorded and available stock, invalid expiry and zero units
+ok 13 - S04: incoming batch, recorded and available stock, invalid expiry and zero units
+  ---
+  duration_ms: 7.179644
+  type: 'test'
+  ...
