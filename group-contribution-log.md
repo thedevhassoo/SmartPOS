@@ -1,37 +1,44 @@
 # SmartPOS - Group Contribution Log
 
-**Status:** Initial allocation; no slice implementation or integration evidence verified by this package. Preserve prior actual records. Planning files alone are not evidence of implemented functionality.
+Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
 
-| Engineer | Assigned slices | Status | Actual commits | Human acceptance |
+The project requester confirms in the current conversation that the final integrated application is running and has been tested, and authorizes publication of the supplied source. This is an overall user-reported result and publication approval, not a record of twenty separate member reviews, individual test executions, or measured NFR outcomes.
+
+At 2026-11-27T15:39:55+05:00 PKT, the shared ChatGPT environment ran `npm test` in server using Node.js v22.16.0: 26 passed, 0 failed, 0 skipped. Scope: domain tests, not PostgreSQL or browser execution. Original rebuild logs also document the strict domain typecheck.
+
+The names below are assigned slice publishers, not a claim that each independently authored the supplied implementation. The actual member commits, branch history and merge records establish publication contributions. Earlier genuine P01 review documents remain in the repository.
+
+| Engineer | Assigned slices | Included in this publication sequence | Branch |
+|---|---|---|---|
+| Muhammad Sana Ullah | S01, S02, S04, S10, S13 | S01, S02, S04, S10, S13 | `feature-sana` |
+| Hassan Adil | S03, S05, S06, S09, S16 | S03, S05, S06, S09, S16 | `feature-hassan` |
+| Nazakat Ali | S07, S08, S14, S19, S20 | S07, S08, S14, S19, S20 | `feature-nazakat` |
+| Muhammad Faseeh | S11, S12, S15, S17, S18 | S11, S12, S15, S17, S18 | `feature-faseeh` |
+
+
+## Publication sequence
+
+This table describes the contents of the staged publication package, not completed remote Git operations. Git commit and merge history is the authoritative timestamp and integration evidence.
+
+| Slice | Assigned publisher | Branch | Source handoff | Publication scope |
 |---|---|---|---|---|
-| Muhammad Sana Ullah | S01, S02, S04, S10, S13 | Not Started | Pending | Pending |
-| Hassan Adil | S03, S05, S06, S09, S16 | Not Started | Pending | Pending |
-| Nazakat Ali | S07, S08, S14, S19, S20 | Not Started | Pending | Pending |
-| Muhammad Faseeh | S11, S12, S15, S17, S18 | Not Started | Pending | Pending |
-
-## Slice contribution index
-
-| Slice | Owner | Branch | AI chat / session | Actual commits | Decisions/fixes | Integration |
-|---|---|---|---|---|---|---|
-| S01 | Muhammad Sana Ullah | `feature-sana` | Pending | Pending | Pending | Pending |
-| S02 | Muhammad Sana Ullah | `feature-sana` | Pending | Pending | Pending | Pending |
-| S03 | Hassan Adil | `feature-hassan` | Pending | Pending | Pending | Pending |
-| S04 | Muhammad Sana Ullah | `feature-sana` | Pending | Pending | Pending | Pending |
-| S05 | Hassan Adil | `feature-hassan` | Pending | Pending | Pending | Pending |
-| S06 | Hassan Adil | `feature-hassan` | Pending | Pending | Pending | Pending |
-| S07 | Nazakat Ali | `feature-nazakat` | Pending | Pending | Pending | Pending |
-| S08 | Nazakat Ali | `feature-nazakat` | Pending | Pending | Pending | Pending |
-| S09 | Hassan Adil | `feature-hassan` | Pending | Pending | Pending | Pending |
-| S10 | Muhammad Sana Ullah | `feature-sana` | Pending | Pending | Pending | Pending |
-| S11 | Muhammad Faseeh | `feature-faseeh` | Pending | Pending | Pending | Pending |
-| S12 | Muhammad Faseeh | `feature-faseeh` | Pending | Pending | Pending | Pending |
-| S13 | Muhammad Sana Ullah | `feature-sana` | Pending | Pending | Pending | Pending |
-| S14 | Nazakat Ali | `feature-nazakat` | Pending | Pending | Pending | Pending |
-| S15 | Muhammad Faseeh | `feature-faseeh` | Pending | Pending | Pending | Pending |
-| S16 | Hassan Adil | `feature-hassan` | Pending | Pending | Pending | Pending |
-| S17 | Muhammad Faseeh | `feature-faseeh` | Pending | Pending | Pending | Pending |
-| S18 | Muhammad Faseeh | `feature-faseeh` | Pending | Pending | Pending | Pending |
-| S19 | Nazakat Ali | `feature-nazakat` | Pending | Pending | Pending | Pending |
-| S20 | Nazakat Ali | `feature-nazakat` | Pending | Pending | Pending | Pending |
-
-Record actual member-specific AI interactions, decisions, fixes and integration. Inherited commits do not count as individual slice implementation. Preserve author attribution.
+| S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
+| S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
+| S03 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
+| S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
+| S05 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
+| S06 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
+| S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
+| S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
+| S09 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
+| S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
+| S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
+| S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
+| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
+| S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
+| S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |

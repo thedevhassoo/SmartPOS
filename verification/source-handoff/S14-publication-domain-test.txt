@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S14: explicit confirm, durable row state, idempotent retry, no stock mutation
+ok 10 - S14: explicit confirm, durable row state, idempotent retry, no stock mutation
+  ---
+  duration_ms: 3.853227
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.

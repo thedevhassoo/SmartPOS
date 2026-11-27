@@ -1,0 +1,1 @@
+80 TypeScript files transpile syntax check, 0 diagnostics

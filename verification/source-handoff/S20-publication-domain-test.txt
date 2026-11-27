@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S20: insufficient evidence and transparent forecast with explicit acceptance
+ok 1 - S20: insufficient evidence and transparent forecast with explicit acceptance
+  ---
+  duration_ms: 6.000145
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.

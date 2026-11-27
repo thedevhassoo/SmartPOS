@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S10: adjustment reason, stale quantity and negative count protection
+ok 25 - S10: adjustment reason, stale quantity and negative count protection
+  ---
+  duration_ms: 3.131777
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.
