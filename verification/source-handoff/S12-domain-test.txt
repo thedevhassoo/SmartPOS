@@ -1,0 +1,8 @@
+Excerpt from shared ChatGPT rebuild domain test run, 2026-11-26T23:56:53+05:00. Not a test run by the member or a test of the staged branch. Full original log supplied at final verification.
+
+# Subtest: S12: before, at and after offer boundary; half-up and capped discount
+ok 15 - S12: before, at and after offer boundary; half-up and capped discount
+  ---
+  duration_ms: 6.819679
+  type: 'test'
+  ...

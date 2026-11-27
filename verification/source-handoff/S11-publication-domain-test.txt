@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S11: offer overlap rejected, adjacent interval allowed, discount bounds
+ok 22 - S11: offer overlap rejected, adjacent interval allowed, discount bounds
+  ---
+  duration_ms: 2.959933
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.
