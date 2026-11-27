@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S07: exact CSV schema, quoted field, BOM, leading zeros, no catalog changes
+ok 11 - S07: exact CSV schema, quoted field, BOM, leading zeros, no catalog changes
+  ---
+  duration_ms: 2.900893
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.
