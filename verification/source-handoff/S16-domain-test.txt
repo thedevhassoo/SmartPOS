@@ -1,0 +1,8 @@
+Excerpt from shared ChatGPT rebuild domain test run, 2026-11-26T23:56:53+05:00. Not a test run by the member or a test of the staged branch. Full original log supplied at final verification.
+
+# Subtest: S16: completed sales only, refund event accounting, recorded costs, empty period
+ok 21 - S16: completed sales only, refund event accounting, recorded costs, empty period
+  ---
+  duration_ms: 9.454554
+  type: 'test'
+  ...

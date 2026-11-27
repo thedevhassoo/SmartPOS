@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v20
+**Plan version:** v21
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 17/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 18/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -42,7 +42,7 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S13 - Push paid bills atomically and view receipt/history | Muhammad Sana Ullah | `feature-sana` | P0 | FR-03, FR-04, FR-13, FR-16 | S04, S09, S10, S12 | Source included |
 | S14 - Confirm CSV import, retry failed rows and view outcomes | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S06, S08, S10, S13 | Source included |
 | S15 - Submit eligible full or partial refund requests | Muhammad Faseeh | `feature-faseeh` | P1 | FR-11, FR-13 | S13 | Source included |
-| S16 - View sales dashboard and product performance | Hassan Adil | `feature-hassan` | P1 | FR-08, FR-09 | S13, S17, S18 | Source ready for later publication |
+| S16 - View sales dashboard and product performance | Hassan Adil | `feature-hassan` | P1 | FR-08, FR-09 | S13, S17, S18 | Source included |
 | S17 - Approve, reject and record externally completed refunds | Muhammad Faseeh | `feature-faseeh` | P1 | FR-08, FR-11, FR-13 | S15 | Source included |
 | S18 - Inspect returns and decide stock disposition | Muhammad Faseeh | `feature-faseeh` | P1 | FR-09, FR-12, FR-13 | S04, S15, S17 | Source included |
 | S19 - Monitor stock, low-stock and expiry alerts | Nazakat Ali | `feature-nazakat` | P1 | FR-07 | S04, S10, S13, S18 | Source ready for later publication |
@@ -286,7 +286,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Hassan Adil | **Branch:** `feature-hassan` | **Priority:** P1 | **Prerequisites:** S13, S17, S18  
 **FRs:** FR-08, FR-09 | **NFRs:** NFR-03; NFR-04 (final)  
-**Task folder:** `slices/S16_HassanAdil/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S16_HassanAdil/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager dashboard and date-filtered reports from Completed Sales; product units, trends and profitability separately, Insufficient Data where facts/costs lacking. Use committed refund/return facts from S17/S18; no draft inclusion. Use only approved PRD/DR-21-25 metrics: gross sales, count, completed refunds, net sales and units; PKT event dates; approved periods; no Draft Bills. Implement refund-aware reporting after S17/S18, cost snapshots and missing-cost handling, category demand/trends per approved thresholds. Reference DreamsPOS only for visuals; no reference data/features.
 
@@ -386,6 +386,7 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v18: S15 publication payload.
 - v19: S17 publication payload.
 - v20: S18 publication payload.
+- v21: S16 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -419,6 +420,6 @@ This table describes the contents of the staged publication package, not complet
 | S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
-| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
+| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |

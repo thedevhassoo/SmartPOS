@@ -89,6 +89,6 @@ This table describes the contents of the staged publication package, not complet
 | S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
-| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
+| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
