@@ -18,6 +18,8 @@ Earlier P00-P02 reviews and design artefacts are retained in the repository. Thi
 | S04 | Muhammad Sana Ullah | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S04_MuhammadSanaUllah/EVIDENCE.md` |
 | S05 | Hassan Adil | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S05_HassanAdil/EVIDENCE.md` |
 | S06 | Hassan Adil | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S06_HassanAdil/EVIDENCE.md` |
+| S07 | Nazakat Ali | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S07_NazakatAli/EVIDENCE.md` |
+| S08 | Nazakat Ali | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S08_NazakatAli/EVIDENCE.md` |
 
 No individual review history, physical scanner record, real PostgreSQL concurrency logs, LAN/backup results, measured NFR timings, or five-participant usability results were supplied. The prior generation environment could not install npm dependencies. The user reports a successful run in their environment; the detailed results were not provided. The shared relational projection and coarse transaction lock remain the documented ADR-010 architecture deviation.
 
@@ -33,8 +35,8 @@ This table describes the contents of the staged publication package, not complet
 | S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S05 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S06 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
-| S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
-| S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
+| S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
+| S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
 | S09 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
