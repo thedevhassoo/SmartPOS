@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S15: cutoff boundary and reserved quantities prevent duplicate requests
+ok 18 - S15: cutoff boundary and reserved quantities prevent duplicate requests
+  ---
+  duration_ms: 4.754262
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.
