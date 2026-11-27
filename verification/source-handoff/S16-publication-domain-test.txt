@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S16: completed sales only, refund event accounting, recorded costs, empty period
+ok 21 - S16: completed sales only, refund event accounting, recorded costs, empty period
+  ---
+  duration_ms: 6.447079
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.

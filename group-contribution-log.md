@@ -11,9 +11,9 @@ The names below are assigned slice publishers, not a claim that each independent
 | Engineer | Assigned slices | Included in this publication sequence | Branch |
 |---|---|---|---|
 | Muhammad Sana Ullah | S01, S02, S04, S10, S13 | S01, S02, S04, S10, S13 | `feature-sana` |
-| Hassan Adil | S03, S05, S06, S09, S16 | S03, S05, S06, S09 | `feature-hassan` |
+| Hassan Adil | S03, S05, S06, S09, S16 | S03, S05, S06, S09, S16 | `feature-hassan` |
 | Nazakat Ali | S07, S08, S14, S19, S20 | S07, S08, S14 | `feature-nazakat` |
-| Muhammad Faseeh | S11, S12, S15, S17, S18 | S11, S12 | `feature-faseeh` |
+| Muhammad Faseeh | S11, S12, S15, S17, S18 | S11, S12, S15, S17, S18 | `feature-faseeh` |
 
 
 ## Publication sequence
@@ -36,9 +36,9 @@ This table describes the contents of the staged publication package, not complet
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
-| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
+| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |

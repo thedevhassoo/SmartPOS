@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v17
+**Plan version:** v21
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 14/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 18/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -41,10 +41,10 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S12 - Apply current offers to Draft Bill totals | Muhammad Faseeh | `feature-faseeh` | P0 | FR-03, FR-16 | S09, S11 | Source included |
 | S13 - Push paid bills atomically and view receipt/history | Muhammad Sana Ullah | `feature-sana` | P0 | FR-03, FR-04, FR-13, FR-16 | S04, S09, S10, S12 | Source included |
 | S14 - Confirm CSV import, retry failed rows and view outcomes | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S06, S08, S10, S13 | Source included |
-| S15 - Submit eligible full or partial refund requests | Muhammad Faseeh | `feature-faseeh` | P1 | FR-11, FR-13 | S13 | Source ready for later publication |
-| S16 - View sales dashboard and product performance | Hassan Adil | `feature-hassan` | P1 | FR-08, FR-09 | S13, S17, S18 | Source ready for later publication |
-| S17 - Approve, reject and record externally completed refunds | Muhammad Faseeh | `feature-faseeh` | P1 | FR-08, FR-11, FR-13 | S15 | Source ready for later publication |
-| S18 - Inspect returns and decide stock disposition | Muhammad Faseeh | `feature-faseeh` | P1 | FR-09, FR-12, FR-13 | S04, S15, S17 | Source ready for later publication |
+| S15 - Submit eligible full or partial refund requests | Muhammad Faseeh | `feature-faseeh` | P1 | FR-11, FR-13 | S13 | Source included |
+| S16 - View sales dashboard and product performance | Hassan Adil | `feature-hassan` | P1 | FR-08, FR-09 | S13, S17, S18 | Source included |
+| S17 - Approve, reject and record externally completed refunds | Muhammad Faseeh | `feature-faseeh` | P1 | FR-08, FR-11, FR-13 | S15 | Source included |
+| S18 - Inspect returns and decide stock disposition | Muhammad Faseeh | `feature-faseeh` | P1 | FR-09, FR-12, FR-13 | S04, S15, S17 | Source included |
 | S19 - Monitor stock, low-stock and expiry alerts | Nazakat Ali | `feature-nazakat` | P1 | FR-07 | S04, S10, S13, S18 | Source ready for later publication |
 | S20 - View explained AI recommendations and threshold suggestions | Nazakat Ali | `feature-nazakat` | P1 | FR-07, FR-10 | S16, S19 | Source ready for later publication |
 
@@ -272,7 +272,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Muhammad Faseeh | **Branch:** `feature-faseeh` | **Priority:** P1 | **Prerequisites:** S13  
 **FRs:** FR-11, FR-13 | **NFRs:** NFR-03; NFR-04 (final); NFR-02  
-**Task folder:** `slices/S15_MuhammadFaseeh/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S15_MuhammadFaseeh/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Cashier matches receipt to Completed Sale, selects eligible quantities and amount, submits Pending. Reserve remaining amount and selected units atomically; reject duplicate/excess/ineligible requests. Use authoritative server time: eligible strictly before 168 hours; at or after boundary ineligible. Reserve pending/approved units and value; Refunded consumes and Rejected releases. Use original discounted sale snapshots and receipt identifier.
 
@@ -286,7 +286,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Hassan Adil | **Branch:** `feature-hassan` | **Priority:** P1 | **Prerequisites:** S13, S17, S18  
 **FRs:** FR-08, FR-09 | **NFRs:** NFR-03; NFR-04 (final)  
-**Task folder:** `slices/S16_HassanAdil/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S16_HassanAdil/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager dashboard and date-filtered reports from Completed Sales; product units, trends and profitability separately, Insufficient Data where facts/costs lacking. Use committed refund/return facts from S17/S18; no draft inclusion. Use only approved PRD/DR-21-25 metrics: gross sales, count, completed refunds, net sales and units; PKT event dates; approved periods; no Draft Bills. Implement refund-aware reporting after S17/S18, cost snapshots and missing-cost handling, category demand/trends per approved thresholds. Reference DreamsPOS only for visuals; no reference data/features.
 
@@ -300,7 +300,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Muhammad Faseeh | **Branch:** `feature-faseeh` | **Priority:** P1 | **Prerequisites:** S15  
 **FRs:** FR-08, FR-11, FR-13 | **NFRs:** NFR-03; NFR-04 (final); NFR-02  
-**Task folder:** `slices/S17_MuhammadFaseeh/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S17_MuhammadFaseeh/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager approves up to reserved remaining limit (may reduce amount) or rejects and releases reservation; only after external refund confirmation transition Approved to Refunded. Retain linked status, audit and approved report treatment. Preserve original sale. Pending->Approved->Refunded only after external confirmation; Pending->Rejected releases reservations. Failed/uncertain external refund remains Approved for reconciliation. No payment gateway, no repeated completion; expose committed facts through a public read contract for S16.
 
@@ -314,7 +314,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Muhammad Faseeh | **Branch:** `feature-faseeh` | **Priority:** P1 | **Prerequisites:** S04, S15, S17  
 **FRs:** FR-09, FR-12, FR-13 | **NFRs:** NFR-03; NFR-04 (final); NFR-02  
-**Task folder:** `slices/S18_MuhammadFaseeh/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S18_MuhammadFaseeh/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Cashier records initial inspection; Owner/Manager decides resellable or non-resellable; only approved resellable units enter Available Stock once through Inventory. Keep monetary and stock states separate and update reporting per approved rule. Separate physical and monetary status. Only authorized resellability confirmation changes Available Stock once, through Inventory; non-resellable/expired/disputed goods excluded. Publish committed disposition facts for S16.
 
@@ -383,6 +383,10 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v15: S12 publication payload.
 - v16: S13 publication payload.
 - v17: S14 publication payload.
+- v18: S15 publication payload.
+- v19: S17 publication payload.
+- v20: S18 publication payload.
+- v21: S16 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -413,9 +417,9 @@ This table describes the contents of the staged publication package, not complet
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
-| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
+| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S16 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
