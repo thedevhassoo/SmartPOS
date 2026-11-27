@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S06: filtering and confirmed deletion unassign products
+ok 14 - S06: filtering and confirmed deletion unassign products
+  ---
+  duration_ms: 2.544071
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.

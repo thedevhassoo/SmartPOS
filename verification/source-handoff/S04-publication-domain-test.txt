@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S04: incoming batch, recorded and available stock, invalid expiry and zero units
+ok 13 - S04: incoming batch, recorded and available stock, invalid expiry and zero units
+  ---
+  duration_ms: 4.84801
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.
