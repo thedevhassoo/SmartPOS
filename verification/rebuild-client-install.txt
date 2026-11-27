@@ -1,0 +1,4 @@
+npm error code ENOTCACHED
+npm error request to https://registry.npmjs.org/@emotion%2freact failed: cache mode is 'only-if-cached' but no cached response is available.
+npm error A complete log of this run can be found in: /home/oai/.npm/_logs/2026-11-26T18_55_56_107Z-debug-0.log
+Exit: 1

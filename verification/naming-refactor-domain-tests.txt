@@ -1,0 +1,135 @@
+Recorded: 2026-11-26T23:39:46+05:00 (PKT)
+
+> smartpos@0.1.0 test
+> node --experimental-strip-types --disable-warning=ExperimentalWarning --test tests/*.test.ts
+
+TAP version 13
+# Subtest: S20: insufficient evidence and transparent forecast with explicit acceptance
+ok 1 - S20: insufficient evidence and transparent forecast with explicit acceptance
+  ---
+  duration_ms: 3.336526
+  type: 'test'
+  ...
+# Subtest: S01: valid login, invalid credentials, logout and protected authorization
+ok 2 - S01: valid login, invalid credentials, logout and protected authorization
+  ---
+  duration_ms: 99.576271
+  type: 'test'
+  ...
+# Subtest: S08: duplicate row decisions cannot both replace
+ok 3 - S08: duplicate row decisions cannot both replace
+  ---
+  duration_ms: 2.108403
+  type: 'test'
+  ...
+# Subtest: S14: explicit confirm, durable row state, idempotent retry, no stock mutation
+ok 4 - S14: explicit confirm, durable row state, idempotent retry, no stock mutation
+  ---
+  duration_ms: 6.395407
+  type: 'test'
+  ...
+# Subtest: S07: exact CSV schema, quoted field, BOM, leading zeros, no catalog changes
+ok 5 - S07: exact CSV schema, quoted field, BOM, leading zeros, no catalog changes
+  ---
+  duration_ms: 2.879657
+  type: 'test'
+  ...
+# Subtest: S09: repeat scan items aggregate, quote does not persist, explicit Save does not deduct
+ok 6 - S09: repeat scan items aggregate, quote does not persist, explicit Save does not deduct
+  ---
+  duration_ms: 2.579404
+  type: 'test'
+  ...
+# Subtest: S04: incoming batch, recorded and available stock, invalid expiry and zero units
+ok 7 - S04: incoming batch, recorded and available stock, invalid expiry and zero units
+  ---
+  duration_ms: 2.324439
+  type: 'test'
+  ...
+# Subtest: S06: filtering and confirmed deletion unassign products
+ok 8 - S06: filtering and confirmed deletion unassign products
+  ---
+  duration_ms: 6.015412
+  type: 'test'
+  ...
+# Subtest: S12: before, at and after offer boundary; half-up and capped discount
+ok 9 - S12: before, at and after offer boundary; half-up and capped discount
+  ---
+  duration_ms: 1.95999
+  type: 'test'
+  ...
+# Subtest: S03: leading zeros, exact lookup, name lookup, duplicate and invalid prices
+ok 10 - S03: leading zeros, exact lookup, name lookup, duplicate and invalid prices
+  ---
+  duration_ms: 1.980831
+  type: 'test'
+  ...
+# Subtest: S17: refund approval, uncertain external result, repeat completion and permissions
+ok 11 - S17: refund approval, uncertain external result, repeat completion and permissions
+  ---
+  duration_ms: 3.62758
+  type: 'test'
+  ...
+# Subtest: S15: cutoff boundary and reserved quantities prevent duplicate requests
+ok 12 - S15: cutoff boundary and reserved quantities prevent duplicate requests
+  ---
+  duration_ms: 3.012273
+  type: 'test'
+  ...
+# Subtest: S18: inspection, resellability, authorized single restock
+ok 13 - S18: inspection, resellability, authorized single restock
+  ---
+  duration_ms: 3.145569
+  type: 'test'
+  ...
+# Subtest: S13: sale atomicity, idempotency, mismatch and concurrent last-unit attempts in memory
+ok 14 - S13: sale atomicity, idempotency, mismatch and concurrent last-unit attempts in memory
+  ---
+  duration_ms: 3.273828
+  type: 'test'
+  ...
+# Subtest: S16: completed sales only, refund event accounting, recorded costs, empty period
+ok 15 - S16: completed sales only, refund event accounting, recorded costs, empty period
+  ---
+  duration_ms: 3.611597
+  type: 'test'
+  ...
+# Subtest: S11: offer overlap rejected, adjacent interval allowed, discount bounds
+ok 16 - S11: offer overlap rejected, adjacent interval allowed, discount bounds
+  ---
+  duration_ms: 4.166845
+  type: 'test'
+  ...
+# Subtest: S02: owner creates staff and resets password, cashier denied
+ok 17 - S02: owner creates staff and resets password, cashier denied
+  ---
+  duration_ms: 188.251131
+  type: 'test'
+  ...
+# Subtest: S19: zero stock precedence, threshold equality, expiry warning
+ok 18 - S19: zero stock precedence, threshold equality, expiry warning
+  ---
+  duration_ms: 2.063634
+  type: 'test'
+  ...
+# Subtest: S10: adjustment reason, stale quantity and negative count protection
+ok 19 - S10: adjustment reason, stale quantity and negative count protection
+  ---
+  duration_ms: 2.038767
+  type: 'test'
+  ...
+# Subtest: S05: location normalization, assignment and rename
+ok 20 - S05: location normalization, assignment and rename
+  ---
+  duration_ms: 2.030134
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2234.290681

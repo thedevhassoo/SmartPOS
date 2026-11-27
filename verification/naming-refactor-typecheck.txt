@@ -1,0 +1,4 @@
+Recorded: 2026-11-26T23:39:46+05:00 (PKT)
+Command: tsc --noEmit --strict --target ES2022 --module NodeNext --moduleResolution NodeNext --allowImportingTsExtensions --skipLibCheck --typeRoots <installed Node typings> server/core/{model,registry,pricing,csv,refund,analytics,load,import-worker}.ts server/slices/*.ts tests/*.test.ts tests/fixture.ts
+Exit code: 0
+Compiler output: no diagnostics.
