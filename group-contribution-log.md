@@ -13,7 +13,7 @@ The names below are assigned slice publishers, not a claim that each independent
 | Muhammad Sana Ullah | S01, S02, S04, S10, S13 | S01, S02, S04, S10 | `feature-sana` |
 | Hassan Adil | S03, S05, S06, S09, S16 | S03, S05, S06, S09 | `feature-hassan` |
 | Nazakat Ali | S07, S08, S14, S19, S20 | S07, S08 | `feature-nazakat` |
-| Muhammad Faseeh | S11, S12, S15, S17, S18 | S11 | `feature-faseeh` |
+| Muhammad Faseeh | S11, S12, S15, S17, S18 | S11, S12 | `feature-faseeh` |
 
 
 ## Publication sequence
@@ -33,7 +33,7 @@ This table describes the contents of the staged publication package, not complet
 | S09 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
-| S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
+| S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |

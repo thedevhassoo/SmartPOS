@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S12: before, at and after offer boundary; half-up and capped discount
+ok 15 - S12: before, at and after offer boundary; half-up and capped discount
+  ---
+  duration_ms: 2.092159
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.
