@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v13
+**Plan version:** v15
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 10/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 12/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -37,8 +37,8 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S08 - Resolve CSV duplicates and Replace/Skip decisions | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S07 | Source included |
 | S09 - Prepare, recalculate and explicitly save Draft Bills | Hassan Adil | `feature-hassan` | P0 | FR-02, FR-03, FR-04, FR-15 | S03, S05 | Source included |
 | S10 - Reconcile stock discrepancies and audit adjustments | Muhammad Sana Ullah | `feature-sana` | P1 | FR-05, FR-13 | S04 | Source included |
-| S11 - Create, edit and cancel scheduled store-wide offers | Muhammad Faseeh | `feature-faseeh` | P1 | FR-13, FR-16 | S01 | Source ready for later publication |
-| S12 - Apply current offers to Draft Bill totals | Muhammad Faseeh | `feature-faseeh` | P0 | FR-03, FR-16 | S09, S11 | Source ready for later publication |
+| S11 - Create, edit and cancel scheduled store-wide offers | Muhammad Faseeh | `feature-faseeh` | P1 | FR-13, FR-16 | S01 | Source included |
+| S12 - Apply current offers to Draft Bill totals | Muhammad Faseeh | `feature-faseeh` | P0 | FR-03, FR-16 | S09, S11 | Source included |
 | S13 - Push paid bills atomically and view receipt/history | Muhammad Sana Ullah | `feature-sana` | P0 | FR-03, FR-04, FR-13, FR-16 | S04, S09, S10, S12 | Source ready for later publication |
 | S14 - Confirm CSV import, retry failed rows and view outcomes | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S06, S08, S10, S13 | Source ready for later publication |
 | S15 - Submit eligible full or partial refund requests | Muhammad Faseeh | `feature-faseeh` | P1 | FR-11, FR-13 | S13 | Source ready for later publication |
@@ -216,7 +216,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Muhammad Faseeh | **Branch:** `feature-faseeh` | **Priority:** P1 | **Prerequisites:** S01  
 **FRs:** FR-13, FR-16 | **NFRs:** NFR-03; NFR-04 (final); NFR-02  
-**Task folder:** `slices/S11_MuhammadFaseeh/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S11_MuhammadFaseeh/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager offers screen with percentage/fixed amount, PKT schedule, overlap-safe writes, active edits and cancellation, status derived from server time and audit. Use PKT display with UTC instants; enforce start-inclusive/end-exclusive non-overlap transactionally even under concurrent requests. Permit adjacent intervals; audit offer changes.
 
@@ -230,7 +230,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Muhammad Faseeh | **Branch:** `feature-faseeh` | **Priority:** P0 | **Prerequisites:** S09, S11  
 **FRs:** FR-03, FR-16 | **NFRs:** NFR-03; NFR-04 (final); NFR-01  
-**Task folder:** `slices/S12_MuhammadFaseeh/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S12_MuhammadFaseeh/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Billing queries Offers at server calculation time, displays applicable terms and capped discount; update on recalculation/offer changes, reject client-submitted discount override. Use integer minor units or exact decimals and round-half-up; percentage or capped fixed discount once per bill, no stacking. Server clock authoritative; S13 re-evaluates at Push.
 
@@ -379,6 +379,8 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v11: S08 publication payload.
 - v12: S09 publication payload.
 - v13: S10 publication payload.
+- v14: S11 publication payload.
+- v15: S12 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -405,8 +407,8 @@ This table describes the contents of the staged publication package, not complet
 | S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
 | S09 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
-| S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
+| S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
