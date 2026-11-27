@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S08: duplicate selection precedes catalog matching and Replace/Skip
+ok 9 - S08: duplicate selection precedes catalog matching and Replace/Skip
+  ---
+  duration_ms: 10.044365
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.

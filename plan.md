@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v07
+**Plan version:** v12
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 4/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 9/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -31,11 +31,11 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S02 - Owner manages staff accounts and resets passwords | Muhammad Sana Ullah | `feature-sana` | P1 | FR-01 | S01 | Source included |
 | S03 - Register, update and find products | Hassan Adil | `feature-hassan` | P0 | FR-02, FR-13 | S01 | Source included |
 | S04 - Receive stock batches and inspect expiry and costs | Muhammad Sana Ullah | `feature-sana` | P1 | FR-05, FR-06 | S03 | Source included |
-| S05 - Create, rename and assign storage locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S03 | Source ready for later publication |
-| S06 - Filter products and safely delete locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S05 | Source ready for later publication |
-| S07 - Upload CSV and inspect a validation preview | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S03, S05 | Source ready for later publication |
-| S08 - Resolve CSV duplicates and Replace/Skip decisions | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S07 | Source ready for later publication |
-| S09 - Prepare, recalculate and explicitly save Draft Bills | Hassan Adil | `feature-hassan` | P0 | FR-02, FR-03, FR-04, FR-15 | S03, S05 | Source ready for later publication |
+| S05 - Create, rename and assign storage locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S03 | Source included |
+| S06 - Filter products and safely delete locations | Hassan Adil | `feature-hassan` | P1 | FR-15 | S05 | Source included |
+| S07 - Upload CSV and inspect a validation preview | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S03, S05 | Source included |
+| S08 - Resolve CSV duplicates and Replace/Skip decisions | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S07 | Source included |
+| S09 - Prepare, recalculate and explicitly save Draft Bills | Hassan Adil | `feature-hassan` | P0 | FR-02, FR-03, FR-04, FR-15 | S03, S05 | Source included |
 | S10 - Reconcile stock discrepancies and audit adjustments | Muhammad Sana Ullah | `feature-sana` | P1 | FR-05, FR-13 | S04 | Source ready for later publication |
 | S11 - Create, edit and cancel scheduled store-wide offers | Muhammad Faseeh | `feature-faseeh` | P1 | FR-13, FR-16 | S01 | Source ready for later publication |
 | S12 - Apply current offers to Draft Bill totals | Muhammad Faseeh | `feature-faseeh` | P0 | FR-03, FR-16 | S09, S11 | Source ready for later publication |
@@ -132,7 +132,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Hassan Adil | **Branch:** `feature-hassan` | **Priority:** P1 | **Prerequisites:** S03  
 **FRs:** FR-15 | **NFRs:** NFR-03; NFR-04 (final)  
-**Task folder:** `slices/S05_HassanAdil/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S05_HassanAdil/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager creates or renames normalized locations and assigns/replaces one current location; authorized lookup including Cashier shows location or Unassigned. Catalog alone changes product reference. Canonical normalized location, one assignment or Unassigned; only Catalog writes product references through its own public service. Audit only as required by PRD.
 
@@ -146,7 +146,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Hassan Adil | **Branch:** `feature-hassan` | **Priority:** P1 | **Prerequisites:** S05  
 **FRs:** FR-15 | **NFRs:** NFR-03; NFR-04 (final); NFR-02  
-**Task folder:** `slices/S06_HassanAdil/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S06_HassanAdil/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager filters by current location and deletes with warning/confirmation; unassign products atomically and clear affected active filter; no replacement or product deletion. Use shared UoW; warning and confirmation precede atomic delete/unassign; no replacement assignment or stock mutation.
 
@@ -160,7 +160,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Nazakat Ali | **Branch:** `feature-nazakat` | **Priority:** P1 | **Prerequisites:** S03, S05  
 **FRs:** FR-14 | **NFRs:** NFR-03; NFR-04 (final)  
-**Task folder:** `slices/S07_NazakatAli/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S07_NazakatAli/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager uploads CSV, sees invalid-row reasons and duplicate groups, staged valid rows and preliminary preview. No product/location writes. Existing match classification is finalized only after S08 duplicate resolution. Exact ordered UTF-8 four-column header, optional BOM; preserve strings. Configurable 5 MB/10,000-data-row initial import limit per DR-39; applies to import workload, not total catalog size. Preview has no product/location writes.
 
@@ -174,7 +174,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Nazakat Ali | **Branch:** `feature-nazakat` | **Priority:** P1 | **Prerequisites:** S07  
 **FRs:** FR-14 | **NFRs:** NFR-03; NFR-04 (final)  
-**Task folder:** `slices/S08_NazakatAli/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S08_NazakatAli/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Choose one retained row per duplicate group, then match retained rows to existing barcodes, set Replace/Skip; persist staged choices and complete preview; confirmation eligibility visible but no commit until S14. Resolve within-file duplicates first; only retained rows are matched with existing products. Persist explicit Replace/Skip decisions and detect stale versions; no business writes before S14.
 
@@ -188,7 +188,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Hassan Adil | **Branch:** `feature-hassan` | **Priority:** P0 | **Prerequisites:** S03, S05  
 **FRs:** FR-02, FR-03, FR-04, FR-15 | **NFRs:** NFR-03; NFR-04 (final); NFR-01  
-**Task folder:** `slices/S09_HassanAdil/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S09_HassanAdil/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Checkout users add/remove products and positive quantities, view price and subtotal, explicitly Save; unsaved draft is not persisted; no manual Cashier discount or stock reservation. S12 adds current offers and S13 Push. Dedicated HID scan field + Enter, repeated intentional scans increment quantity, prevent duplicate handling of one terminator, respect dialog focus, fallback to manual and name search. Explicit Save only; no stock reservation or deduction. S12 integrates offers, S13 finalizes sales. Never report a simulated scan as hardware verification.
 
@@ -373,6 +373,11 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v05: S02 publication payload.
 - v06: S03 publication payload.
 - v07: S04 publication payload.
+- v08: S05 publication payload.
+- v09: S06 publication payload.
+- v10: S07 publication payload.
+- v11: S08 publication payload.
+- v12: S09 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -393,11 +398,11 @@ This table describes the contents of the staged publication package, not complet
 | S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S03 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
-| S05 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
-| S06 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
-| S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
-| S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
-| S09 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
+| S05 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
+| S06 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
+| S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
+| S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
+| S09 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
