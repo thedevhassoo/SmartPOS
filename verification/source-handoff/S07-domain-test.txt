@@ -1,0 +1,8 @@
+Excerpt from shared ChatGPT rebuild domain test run, 2026-11-26T23:56:53+05:00. Not a test run by the member or a test of the staged branch. Full original log supplied at final verification.
+
+# Subtest: S07: exact CSV schema, quoted field, BOM, leading zeros, no catalog changes
+ok 11 - S07: exact CSV schema, quoted field, BOM, leading zeros, no catalog changes
+  ---
+  duration_ms: 2.883393
+  type: 'test'
+  ...
