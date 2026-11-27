@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v21
+**Plan version:** v23
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 18/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 20/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -45,8 +45,8 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S16 - View sales dashboard and product performance | Hassan Adil | `feature-hassan` | P1 | FR-08, FR-09 | S13, S17, S18 | Source included |
 | S17 - Approve, reject and record externally completed refunds | Muhammad Faseeh | `feature-faseeh` | P1 | FR-08, FR-11, FR-13 | S15 | Source included |
 | S18 - Inspect returns and decide stock disposition | Muhammad Faseeh | `feature-faseeh` | P1 | FR-09, FR-12, FR-13 | S04, S15, S17 | Source included |
-| S19 - Monitor stock, low-stock and expiry alerts | Nazakat Ali | `feature-nazakat` | P1 | FR-07 | S04, S10, S13, S18 | Source ready for later publication |
-| S20 - View explained AI recommendations and threshold suggestions | Nazakat Ali | `feature-nazakat` | P1 | FR-07, FR-10 | S16, S19 | Source ready for later publication |
+| S19 - Monitor stock, low-stock and expiry alerts | Nazakat Ali | `feature-nazakat` | P1 | FR-07 | S04, S10, S13, S18 | Source included |
+| S20 - View explained AI recommendations and threshold suggestions | Nazakat Ali | `feature-nazakat` | P1 | FR-07, FR-10 | S16, S19 | Source included |
 
 ## 5. Execution order
 
@@ -328,7 +328,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Nazakat Ali | **Branch:** `feature-nazakat` | **Priority:** P1 | **Prerequisites:** S04, S10, S13, S18  
 **FRs:** FR-07 | **NFRs:** NFR-03; NFR-04 (final)  
-**Task folder:** `slices/S19_NazakatAli/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S19_NazakatAli/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager dashboard for actual stock, zero stock, configurable per-product low-stock threshold and approaching expiry based on approved 30-day default. S20 adds advisory suggested threshold. Use positive Available Stock at or below manual threshold for Low Stock, zero for Out of Stock, 30-calendar-day approaching expiry default, separate expired state; approved alert priority and actual facts only.
 
@@ -342,7 +342,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Nazakat Ali | **Branch:** `feature-nazakat` | **Priority:** P1 | **Prerequisites:** S16, S19  
 **FRs:** FR-07, FR-10 | **NFRs:** NFR-03; NFR-04 (final)  
-**Task folder:** `slices/S20_NazakatAli/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S20_NazakatAli/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** Owner/Manager views evidence-backed local recommendations and suggested thresholds, displays evidence/uncertainty and Insufficient Data; explicit authorized acceptance to change manual threshold, never auto-buy or mutate stock/sales. Use the approved local evidence-based method. Use local explainable 30-day moving average, at least 30 days history and 10 net units; ceil 7-day coverage for suggested threshold; insufficient data is explicit. Human authorization to adopt a threshold; no stock/sales/purchase mutation. Deterministic fixture checks and held-out error metric only when data permits.
 
@@ -387,6 +387,8 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v19: S17 publication payload.
 - v20: S18 publication payload.
 - v21: S16 publication payload.
+- v22: S19 publication payload.
+- v23: S20 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -421,5 +423,5 @@ This table describes the contents of the staged publication package, not complet
 | S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S16 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
-| S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
-| S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
+| S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
+| S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
