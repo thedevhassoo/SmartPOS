@@ -11,7 +11,7 @@ The names below are assigned slice publishers, not a claim that each independent
 | Engineer | Assigned slices | Included in this publication sequence | Branch |
 |---|---|---|---|
 | Muhammad Sana Ullah | S01, S02, S04, S10, S13 | S01, S02, S04 | `feature-sana` |
-| Hassan Adil | S03, S05, S06, S09, S16 | S03, S05 | `feature-hassan` |
+| Hassan Adil | S03, S05, S06, S09, S16 | S03, S05, S06 | `feature-hassan` |
 | Nazakat Ali | S07, S08, S14, S19, S20 | Later stages | `feature-nazakat` |
 | Muhammad Faseeh | S11, S12, S15, S17, S18 | Later stages | `feature-faseeh` |
 
@@ -27,7 +27,7 @@ This table describes the contents of the staged publication package, not complet
 | S03 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S05 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
-| S06 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
+| S06 | Hassan Adil | `feature-hassan` | Domain test passed | Included through this stage |
 | S07 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S08 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S09 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
