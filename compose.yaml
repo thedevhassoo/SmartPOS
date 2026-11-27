@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: smartpos
+      POSTGRES_USER: smartpos
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - smartpos_data:/var/lib/postgresql/data
+volumes:
+  smartpos_data:

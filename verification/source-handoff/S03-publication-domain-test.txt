@@ -1,0 +1,9 @@
+Actual shared full-domain-suite run, 2026-11-27T15:39:55+05:00 PKT.
+# Subtest: S03: leading zeros, exact lookup, name lookup, duplicate and invalid prices
+ok 16 - S03: leading zeros, exact lookup, name lookup, duplicate and invalid prices
+  ---
+  duration_ms: 3.01544
+  type: 'test'
+  ...
+
+Full suite: 26 passed; 0 failed; 0 skipped.
