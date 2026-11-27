@@ -10,7 +10,7 @@ The names below are assigned slice publishers, not a claim that each independent
 
 | Engineer | Assigned slices | Included in this publication sequence | Branch |
 |---|---|---|---|
-| Muhammad Sana Ullah | S01, S02, S04, S10, S13 | Later stages | `feature-sana` |
+| Muhammad Sana Ullah | S01, S02, S04, S10, S13 | S01 | `feature-sana` |
 | Hassan Adil | S03, S05, S06, S09, S16 | Later stages | `feature-hassan` |
 | Nazakat Ali | S07, S08, S14, S19, S20 | Later stages | `feature-nazakat` |
 | Muhammad Faseeh | S11, S12, S15, S17, S18 | Later stages | `feature-faseeh` |
@@ -22,7 +22,7 @@ This table describes the contents of the staged publication package, not complet
 
 | Slice | Assigned publisher | Branch | Source handoff | Publication scope |
 |---|---|---|---|---|
-| S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
+| S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S03 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
@@ -42,16 +42,3 @@ This table describes the contents of the staged publication package, not complet
 | S16 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
-# SmartPOS — Group Contribution Log
-
-**Status:** Initial allocation; no slice implementation or integration evidence exists yet.
-
-| Engineer | Assigned slices | Status | Actual commits | Human acceptance |
-|---|---|---|---|---|
-| Muhammad Sana Ullah | S01, S02, S04, S10, S13 | Not Started | Pending | Pending |
-| Hassan Adil | S03, S05, S06, S09, S16 | Not Started | Pending | Pending |
-| Nazakat Ali | S07, S08, S14, S19, S20 | Not Started | Pending | Pending |
-| Muhammad Faseeh | S11, S12, S15, S17, S18 | Not Started | Pending | Pending |
-
-Maintain individual contribution evidence through meaningful feature-branch commits and actual AI conversation references. Do not count planning commits or inherited develop commits as slice implementation evidence.
-
