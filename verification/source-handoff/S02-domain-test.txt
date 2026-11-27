@@ -1,0 +1,8 @@
+Excerpt from shared ChatGPT rebuild domain test run, 2026-11-26T23:56:53+05:00. Not a test run by the member or a test of the staged branch. Full original log supplied at final verification.
+
+# Subtest: S02: owner creates staff and resets password, cashier denied
+ok 23 - S02: owner creates staff and resets password, cashier denied
+  ---
+  duration_ms: 223.888267
+  type: 'test'
+  ...
