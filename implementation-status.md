@@ -7,7 +7,7 @@ The project requester confirms in the current conversation that the final integr
 At 2026-11-27T15:39:55+05:00 PKT, the shared ChatGPT environment ran `npm test` in server using Node.js v22.16.0: 26 passed, 0 failed, 0 skipped. Scope: domain tests, not PostgreSQL or browser execution. Original rebuild logs also document the strict domain typecheck.
 
 - Source implementation areas available: 20/20.
-- Cumulative source areas scheduled in this payload: 14/20.
+- Cumulative source areas scheduled in this payload: 17/20.
 - Publication authorization: Approved by requester.
 - Actual remote publication and merges: recorded in Git history, not certified by this package.
 
@@ -33,9 +33,9 @@ This table describes the contents of the staged publication package, not complet
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
-| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
+| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S16 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |

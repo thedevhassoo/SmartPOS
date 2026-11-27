@@ -26,6 +26,9 @@ Earlier P00-P02 reviews and design artefacts are retained in the repository. Thi
 | S12 | Muhammad Faseeh | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S12_MuhammadFaseeh/EVIDENCE.md` |
 | S13 | Muhammad Sana Ullah | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S13_MuhammadSanaUllah/EVIDENCE.md` |
 | S14 | Nazakat Ali | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S14_NazakatAli/EVIDENCE.md` |
+| S15 | Muhammad Faseeh | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S15_MuhammadFaseeh/EVIDENCE.md` |
+| S17 | Muhammad Faseeh | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S17_MuhammadFaseeh/EVIDENCE.md` |
+| S18 | Muhammad Faseeh | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S18_MuhammadFaseeh/EVIDENCE.md` |
 
 No individual review history, physical scanner record, real PostgreSQL concurrency logs, LAN/backup results, measured NFR timings, or five-participant usability results were supplied. The prior generation environment could not install npm dependencies. The user reports a successful run in their environment; the detailed results were not provided. The shared relational projection and coarse transaction lock remain the documented ADR-010 architecture deviation.
 
@@ -49,9 +52,9 @@ This table describes the contents of the staged publication package, not complet
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Included through this stage |
-| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
-| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
+| S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
+| S18 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S16 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
