@@ -1,10 +1,10 @@
 # SmartPOS - Final implementation planning baseline
 
-**Plan version:** v15
+**Plan version:** v16
 **Prepared for publication:** 2026-11-27T15:39:55+05:00 (PKT)
 **Coordinator:** Hassan Adil  
 **Plan approval:** Approved by the project requester for staged publication.
-**Implementation status:** All 20 source areas generated; 12/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
+**Implementation status:** All 20 source areas generated; 13/20 in this cumulative publication stage. Integrated application running and tested, as reported by the requester. Remote integration is evidenced by Git.
 **Source:** `develop` plan v01 (its recorded baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb`), PRD v3.1, accepted ADR-006 and Stage 2 decision register. Verify current HEAD at integration; this is not a claim that the baseline hash is current HEAD.
 
 ## 1. Objective and boundaries
@@ -39,7 +39,7 @@ P0 = critical foundation/checkout; P1 = other required scope (not optional). Dep
 | S10 - Reconcile stock discrepancies and audit adjustments | Muhammad Sana Ullah | `feature-sana` | P1 | FR-05, FR-13 | S04 | Source included |
 | S11 - Create, edit and cancel scheduled store-wide offers | Muhammad Faseeh | `feature-faseeh` | P1 | FR-13, FR-16 | S01 | Source included |
 | S12 - Apply current offers to Draft Bill totals | Muhammad Faseeh | `feature-faseeh` | P0 | FR-03, FR-16 | S09, S11 | Source included |
-| S13 - Push paid bills atomically and view receipt/history | Muhammad Sana Ullah | `feature-sana` | P0 | FR-03, FR-04, FR-13, FR-16 | S04, S09, S10, S12 | Source ready for later publication |
+| S13 - Push paid bills atomically and view receipt/history | Muhammad Sana Ullah | `feature-sana` | P0 | FR-03, FR-04, FR-13, FR-16 | S04, S09, S10, S12 | Source included |
 | S14 - Confirm CSV import, retry failed rows and view outcomes | Nazakat Ali | `feature-nazakat` | P1 | FR-14 | S06, S08, S10, S13 | Source ready for later publication |
 | S15 - Submit eligible full or partial refund requests | Muhammad Faseeh | `feature-faseeh` | P1 | FR-11, FR-13 | S13 | Source ready for later publication |
 | S16 - View sales dashboard and product performance | Hassan Adil | `feature-hassan` | P1 | FR-08, FR-09 | S13, S17, S18 | Source ready for later publication |
@@ -244,7 +244,7 @@ All mapped criteria retain original IDs. A shared criterion is checked locally w
 
 **Owner:** Muhammad Sana Ullah | **Branch:** `feature-sana` | **Priority:** P0 | **Prerequisites:** S04, S09, S10, S12  
 **FRs:** FR-03, FR-04, FR-13, FR-16 | **NFRs:** NFR-03; NFR-04 (final); NFR-01; NFR-02  
-**Task folder:** `slices/S13_MuhammadSanaUllah/` | **Status:** Source ready for later publication
+**Task folder:** `slices/S13_MuhammadSanaUllah/` | **Status:** Source included
 **Mode:** Bounded AFK; stop on critical contradiction or unresolved security/financial decision.  
 **Scope / user outcome:** All three roles Push after external payment check. Billing coordinates Catalog/Offers/Inventory/Audit through opaque UoW, persists receipt/snapshots and stable logical Push ID; receipt and permitted history/audit views, no untraceable audit deletion. Use a stable logical Push identity, same checked-out transaction client behind opaque UoW, historical snapshots, FEFO stock allocation, paid-amount reconciliation and atomic sale/stock/audit effects. Preserve saved draft on failure. Implement permitted receipts/history and audit view; untraceable audit deletion is forbidden.
 
@@ -381,6 +381,7 @@ Run actual role-specific end-to-end journeys: Owner creates staff; authorized st
 - v13: S10 publication payload.
 - v14: S11 publication payload.
 - v15: S12 publication payload.
+- v16: S13 publication payload.
 
 
 Prepared for publication: 2026-11-27T15:39:55+05:00 (PKT). This is the package preparation time; Git records the actual publication and merge times.
@@ -409,7 +410,7 @@ This table describes the contents of the staged publication package, not complet
 | S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
-| S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
+| S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
 | S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |

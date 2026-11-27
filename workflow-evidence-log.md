@@ -24,6 +24,7 @@ Earlier P00-P02 reviews and design artefacts are retained in the repository. Thi
 | S10 | Muhammad Sana Ullah | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S10_MuhammadSanaUllah/EVIDENCE.md` |
 | S11 | Muhammad Faseeh | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S11_MuhammadFaseeh/EVIDENCE.md` |
 | S12 | Muhammad Faseeh | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S12_MuhammadFaseeh/EVIDENCE.md` |
+| S13 | Muhammad Sana Ullah | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S13_MuhammadSanaUllah/EVIDENCE.md` |
 
 No individual review history, physical scanner record, real PostgreSQL concurrency logs, LAN/backup results, measured NFR timings, or five-participant usability results were supplied. The prior generation environment could not install npm dependencies. The user reports a successful run in their environment; the detailed results were not provided. The shared relational projection and coarse transaction lock remain the documented ADR-010 architecture deviation.
 
@@ -45,7 +46,7 @@ This table describes the contents of the staged publication package, not complet
 | S10 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S11 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
 | S12 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Included through this stage |
-| S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
+| S13 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S14 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S15 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
 | S17 | Muhammad Faseeh | `feature-faseeh` | Domain test passed | Later publication stage |
