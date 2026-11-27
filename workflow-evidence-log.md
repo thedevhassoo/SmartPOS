@@ -12,6 +12,8 @@ Earlier P00-P02 reviews and design artefacts are retained in the repository. Thi
 
 | Slice | Assigned publisher | Execution evidence | Human decision | Source evidence |
 |---|---|---|---|---|
+| S01 | Muhammad Sana Ullah | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S01_MuhammadSanaUllah/EVIDENCE.md` |
+| S02 | Muhammad Sana Ullah | Shared ChatGPT generation and domain suite | Overall publication approved by requester | `slices/S02_MuhammadSanaUllah/EVIDENCE.md` |
 
 No individual review history, physical scanner record, real PostgreSQL concurrency logs, LAN/backup results, measured NFR timings, or five-participant usability results were supplied. The prior generation environment could not install npm dependencies. The user reports a successful run in their environment; the detailed results were not provided. The shared relational projection and coarse transaction lock remain the documented ADR-010 architecture deviation.
 
@@ -21,8 +23,8 @@ This table describes the contents of the staged publication package, not complet
 
 | Slice | Assigned publisher | Branch | Source handoff | Publication scope |
 |---|---|---|---|---|
-| S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
-| S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
+| S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
+| S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S03 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S05 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
@@ -41,17 +43,3 @@ This table describes the contents of the staged publication package, not complet
 | S16 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S19 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
 | S20 | Nazakat Ali | `feature-nazakat` | Domain test passed | Later publication stage |
-# SmartPOS — Workflow Evidence Log
-
-**Status:** Initial evidence log; no implementation or human slice reviews completed.
-
-| Date/time PKT | Engineer | Slice | Event | Execution mode | Evidence | Result/status |
-|---|---|---|---|---|---|---|
-| 2026-11-26 | Coordinator | Stage 2 | Context and 20-slice approval received | AFK | Human instruction in conversation; develop baseline `ae19db3b5c6d10d24b6dd0586a73dd78052854eb` | Planning started |
-| Not yet recorded | Muhammad Sana Ullah | S01/S02/S04/S10/S13 | No implementation activity | — | — | Not Started |
-| Not yet recorded | Hassan Adil | S03/S05/S06/S09/S16 | No implementation activity | — | — | Not Started |
-| Not yet recorded | Nazakat Ali | S07/S08/S14/S19/S20 | No implementation activity | — | — | Not Started |
-| Not yet recorded | Muhammad Faseeh | S11/S12/S15/S17/S18 | No implementation activity | — | — | Not Started |
-
-After each slice, append only verified AI session references, actual implementation summary, test commands/results, correction loops, human Accept/Revise/Reject decision, Git commit and integration status.
-

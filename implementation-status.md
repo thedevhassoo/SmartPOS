@@ -7,7 +7,7 @@ The project requester confirms in the current conversation that the final integr
 At 2026-11-27T15:39:55+05:00 PKT, the shared ChatGPT environment ran `npm test` in server using Node.js v22.16.0: 26 passed, 0 failed, 0 skipped. Scope: domain tests, not PostgreSQL or browser execution. Original rebuild logs also document the strict domain typecheck.
 
 - Source implementation areas available: 20/20.
-- Cumulative source areas scheduled in this payload: 0/20.
+- Cumulative source areas scheduled in this payload: 2/20.
 - Publication authorization: Approved by requester.
 - Actual remote publication and merges: recorded in Git history, not certified by this package.
 
@@ -19,8 +19,8 @@ This table describes the contents of the staged publication package, not complet
 
 | Slice | Assigned publisher | Branch | Source handoff | Publication scope |
 |---|---|---|---|---|
-| S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
-| S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
+| S01 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
+| S02 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Included through this stage |
 | S03 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
 | S04 | Muhammad Sana Ullah | `feature-sana` | Domain test passed | Later publication stage |
 | S05 | Hassan Adil | `feature-hassan` | Domain test passed | Later publication stage |
